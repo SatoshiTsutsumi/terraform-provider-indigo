@@ -38,6 +38,7 @@ resource "indigo_snapshot" "snapshot00" {
     name = "snapshot00"
     instance_id = indigo_instance.inst00.id
 }
+
 resource "indigo_firewall" "firewall00" {
     name = "firewall00"
     inbound {
@@ -66,7 +67,6 @@ resource "indigo_firewall" "firewall00" {
     }
 }
 
-
 output "inst00_output" {
     value = indigo_instance.inst00
 }
@@ -78,3 +78,4 @@ output "snapshot00_output" {
 output "firewall00_output" {
     value = indigo_firewall.firewall00
 }
+
