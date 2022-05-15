@@ -5,6 +5,12 @@ Terraform Provider for WebARENA Indigo
 - [indigo-client-go](https://github.com/UndefxDev/indigo-client-go)
 - [terraform-plugin-sdk v2](https://github.com/hashicorp/terraform-plugin-sdk)
 
+# Support Resources
+- SSH Key
+- Instance
+- Snapshot
+- Firewall
+
 # How to use
 Please refer to example/main.tf.
 Values for each parameter are under investigation as they seem NOT documented.

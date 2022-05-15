@@ -4,7 +4,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-// Provider -
+// Provider
 func Provider() *schema.Provider {
 	return &schema.Provider{
 		Schema: map[string]*schema.Schema{
@@ -28,6 +28,7 @@ func Provider() *schema.Provider {
 			"indigo_ssh_key":  resourceSSHKey(),
 			"indigo_instance": resourceInstance(),
 			"indigo_snapshot": resourceSnapshot(),
+			"indigo_firewall": resourceFirewall(),
 		},
 		DataSourcesMap:       map[string]*schema.Resource{},
 		ConfigureContextFunc: providerConfigure,
