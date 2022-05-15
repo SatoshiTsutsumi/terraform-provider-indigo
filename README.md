@@ -12,6 +12,10 @@ Terraform Provider for WebARENA Indigo
 - Firewall
 
 # How to use
+```
+$ make
+```
+
 Please refer to example/main.tf.
 Values for each parameter are under investigation as they seem NOT documented.
 
